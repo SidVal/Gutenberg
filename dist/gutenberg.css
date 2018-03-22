@@ -32,14 +32,13 @@ body {
 
 /**
      * Add the correct display in IE 9-.
+     * OLR: quité aside
      */
 article,
-aside,
-footer,	
 header,
+footer,
 nav,
-section {
-  display: block; }
+section {display: block;}
 
 /**
      * Correct the font size and margin on `h1` elements within `section` and
@@ -426,7 +425,7 @@ p:first-line,
 div:first-line,
 blockquote:first-line,
 li:first-line {
-  background: transparent !important;
+  background: transparent;
   box-shadow: none !important;
   text-shadow: none !important; }
 
@@ -659,3 +658,18 @@ acronym[title].no-reformat:after {
 .no-reformat acronym:after,
 .no-reformat a:after {
   content: ''; }
+
+/* Desde aquí agrego lineas */
+footer {    
+position: fixed;
+bottom: 0;
+background-color: lightgray;
+border-top-style: groove;
+border-top-color: cornsilk;
+margin: 10px 40px 0 40px;
+width: -webkit-fill-available; }
+
+article {
+margin-bottom: 5px; }
+
+aside {display:none !important;}
